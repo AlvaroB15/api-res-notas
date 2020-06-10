@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+
+    <title>API Notas</title>
+  </head>
+
+  <body>  
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-fark">
+      <a class="navbar-brand" href="#">API Notas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Endpoint Notas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/notas">/notas</a>
+              <a class="dropdown-item" href="/notas/1">/cancion/:id</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" >Los id por defecto son 1 - Relleno</a>
+            </div>
+          </li>
+        
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+
+
+
+    <article>
+      
+      <div class="container pt-5 text-white">
+        
+        <h1 class="  text-center font-weight-bolder titulo mt-20">API Notas</h1>
+
+        <div  class="mb-100 pt-5 text-white">
+            <p class="">En esta api tendremos, solo tendra 1 endpoints, '/notas'</p>
+
+            <p>Cada una de ella , tendra los verbos completos (get, getId, delete, put, post), pero si van a eliminar, agreguen algo y eliminen eso, por favor no borren la data que me ha tomado hacer, ya que pongo el texto pre formateado para la letra de canciones y es algo lioso xd</p>
+
+            <h2>Endpoint '/notas/'</h2>
+
+            <p>Tenemos por ejemplo: </p>
+
+            <code>router.get( '/notas', getNotas);</code> <br>
+            <code>router.get( '/notas/:id' , getNotasById);</code> <br>
+            <code>router.post('/notas', createNota);</code> <br>
+
+            <code>router.delete('/notas/:id', deleteNotaById);</code> <br>
+            <code>router.put('/notas/:id', updateNotaById);</code> <br>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <footer class="text-center pt-5 pb-4">
+        Derechos Reservados a Alvaro Begazo Carhuayo xd 
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+  
+</html>
